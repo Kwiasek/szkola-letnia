@@ -3,9 +3,17 @@ import Nav from "./components/Nav";
 
 function App() {
   return (
-    <div className="font-sans">
+    <div className="flex flex-col">
       <Nav />
-      <Header />
+      <main className="w-3/4 mx-auto">
+        <Header />
+        <div className="flex flex-row gap-5 mt-5">
+          <div className="w-3/4 h-[300px] bg-orange rounded-lg">asd</div>
+          <div className="w-3/4 h-[400px] bg-hero rounded-lg bg-cover bg-no-repeat bg-center">
+            asd
+          </div>
+        </div>
+      </main>
     </div>
   );
 }

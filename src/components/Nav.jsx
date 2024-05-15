@@ -2,8 +2,8 @@ import LocalDiningIcon from "@mui/icons-material/LocalDining";
 
 const Nav = () => {
   return (
-    <nav className="flex shrink-0 justify-between px-8 py-3 bg-green-800 font-bold text-orange items-center sticky top-0">
-      <a href="#header" className="drop-shadow-md flex gap-1">
+    <nav className="flex shrink-0 justify-between px-10 py-4 font-bold items-center sticky top-0 mb-8">
+      <a href="#header" className="flex gap-1">
         <LocalDiningIcon />
         Letnie smaki
       </a>
@@ -14,10 +14,7 @@ const Nav = () => {
           ["Dołącz teraz", "#sign-up"],
         ].map(([title, url]) => {
           return title === "Dołącz teraz" ? (
-            <a
-              href={url}
-              className="bg-orange text-green-800 px-3 py-1 rounded-lg"
-            >
+            <a href={url} className="px-3 py-1 rounded-xl border-2">
               {title}
             </a>
           ) : (
