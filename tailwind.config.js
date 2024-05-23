@@ -19,7 +19,12 @@ export default {
           800: "#2C7865",
         },
         gray: "#D9D9D9",
-        coffee: "#BCAAA4",
+        coffee: 
+        {
+          200: "#FFE6D6",
+          400: "#BCAAA4",
+          600: "#877670",
+        },
       },
     },
   },
