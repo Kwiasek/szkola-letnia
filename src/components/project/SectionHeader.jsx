@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const SectionHeader = ({ text }) => {
   return (
     <h2 className="relative flex py-5 items-center text-3xl font-bold">

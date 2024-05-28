@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const Stat = ({ title, number, desc, bgColor }) => {
   return (
     <div

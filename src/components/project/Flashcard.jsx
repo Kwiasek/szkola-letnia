@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const Flashcard = ({ text, textColor, bgColor }) => {
   return (
     <div className={`info bg-${bgColor} rounded-xl p-3 text-justify`}>
