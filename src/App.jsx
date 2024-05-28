@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="flex flex-col">
       <Nav />
-      <main className="w-3/4 mx-auto">
+      <main className="w-3/4 md:mx-auto md:container">
         {/* <Header /> */}
         <Project/>
         <div className="flex flex-row gap-5 mt-5">
