@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Project from "./components/Project";
+import Form from "./components/Form";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             asd
           </div>
         </div>
+        <Form/>
       </main>
     </div>
   );
