@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const Flashcard = (props) => {
   const bgColors = {
     "coffee-200": "bg-coffee-200",

@@ -56,7 +56,7 @@ const Project = () => {
       <div className="stats flex justify-between gap-20">
         <Stat
           title="ZAUFAŁO NAM..."
-          number="10.000+"
+          number="1000"
           desc="kursantów"
           bgColor="coffee-400"
         />
@@ -68,7 +68,7 @@ const Project = () => {
         />
         <Stat
           title="POMAGA NAM..."
-          number="50+"
+          number="50"
           desc="doświadczonych kucharzy"
           bgColor="coffee-600"
         />
