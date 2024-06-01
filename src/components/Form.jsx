@@ -189,7 +189,9 @@ const Form = () => {
               className="text-xl p-2 bg-coffee-200 rounded-2xl border-2 border-coffee-600"
               name="age-group"
               id="age-group"
+              defaultValue="empty"
             >
+              <option value="empty" disabled>Wybierz grupę wiekową...</option>
               <option value="age-group-1">16-18 lat</option>
               <option value="age-group-2">19-21 lat</option>
               <option value="age-group-3">22-24 lat</option>
@@ -212,7 +214,9 @@ const Form = () => {
               className="text-xl p-2 bg-coffee-200 rounded-2xl border-2 border-coffee-600"
               name="term"
               id="term"
+              defaultValue="empty"
             >
+              <option value="empty" disabled>Wybierz termin...</option>
               <option value="june">czerwiec</option>
               <option value="july">lipec</option>
               <option value="august">sierpień</option>
@@ -229,7 +233,7 @@ const Form = () => {
             <button
               id="submit-btn"
               type="button"
-              className="bg-coffee-600 text-slate-200 text-3xl w-1/3 mx-auto rounded-3xl px-5 py-2 hover:bg-yellow-800/70"
+              className="bg-coffee-600 text-slate-200 text-3xl max-w-1/3 mx-auto rounded-3xl px-5 py-2 hover:bg-yellow-800/70"
               onClick={formValidation}
             >
               Zapisz się
