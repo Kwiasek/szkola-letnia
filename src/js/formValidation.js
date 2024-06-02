@@ -1,3 +1,5 @@
+import createAlert from "./alerts";
+
 function formValidation() {
     console.log("Form validation...");
 
@@ -87,6 +89,13 @@ function formValidation() {
     validateCity();
     validateAgeGroup();
     validateTerm();
+
+    if(isFormValid) {
+        createAlert("Przyjeliśmy twoje zgłoszenie!");
+    }
+    // else {
+    //     createAlert("Formularz nie został poprawnie wypełniony!");
+    // }
 
     // --- VALIDATION ---
     function validateName() {

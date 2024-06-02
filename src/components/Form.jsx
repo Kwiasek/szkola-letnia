@@ -20,8 +20,6 @@ const Form = () => {
 
         <div className="mx-auto">
           <form className="flex flex-col" method="POST">
-            {/* Sterowanie tym, czy error sie wyświetla za pomocą opacity-0, żeby nie przesuwał elementów w formularzu */}
-
             <div className="flex gap-10">
               <div className="flex flex-col left w-2/5">
                 {/*----- IMIE -----  */}
@@ -186,7 +184,7 @@ const Form = () => {
               Grupa wiekowa
             </label>
             <select
-              className="text-xl p-2 bg-coffee-200 rounded-2xl border-2 border-coffee-600"
+              className="text-xl p-2.5 bg-coffee-200 rounded-2xl border-2 border-coffee-600"
               name="age-group"
               id="age-group"
               defaultValue="empty"
@@ -211,7 +209,7 @@ const Form = () => {
               Termin:
             </label>
             <select
-              className="text-xl p-2 bg-coffee-200 rounded-2xl border-2 border-coffee-600"
+              className="text-xl p-2.5 bg-coffee-200 rounded-2xl border-2 border-coffee-600"
               name="term"
               id="term"
               defaultValue="empty"
