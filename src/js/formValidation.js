@@ -92,6 +92,7 @@ function formValidation() {
 
     if(isFormValid) {
         createAlert("Przyjeliśmy twoje zgłoszenie!");
+        clearForm();
     }
     // else {
     //     createAlert("Formularz nie został poprawnie wypełniony!");
@@ -236,6 +237,18 @@ function formValidation() {
             return true;
         }
         return false;
+    }
+
+    function clearForm() {
+        nameField.value = "";
+        surnameField.value = "";
+        emailField.value = "";
+        houseNrField.value = "";
+        streetField.value = "";
+        zipCodeField.value = "";
+        cityField.value = "";
+        ageGroupSelect.value = "empty";
+        termSelect.value = "empty";
     }
 
     function isDigit(char) {

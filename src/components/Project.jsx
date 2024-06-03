@@ -22,15 +22,15 @@ const Project = () => {
           <SectionHeader text="Cel projektu" />
           <Flashcard
             text='Celem projektu "Letnia Szkoła Kulinarna" jest stworzenie inspirującej przestrzeni, gdzie studenci i młodzież mogą rozwijać swoje umiejętności kulinarne, zdobywając teoretyczną i praktyczną wiedzę z zakresu gotowania i zdrowego odżywiania.'
-            bgColor="coffee-600"
+            bgColor="coffee-500"
           />
           <Flashcard
             text="Program stawia na naukę samodzielności w przygotowywaniu posiłków, promując współpracę zespołową i kreatywność poprzez wspólne projekty i warsztaty."
-            bgColor="coffee-200"
+            bgColor="coffee-400"
           />
           <Flashcard
             text="Zajęcia praktyczne, warsztaty tematyczne, wykłady oraz spotkania z profesjonalnymi kucharzami i dietetykami umożliwią uczestnikom zdobycie umiejętności przydatnych w codziennym życiu i przyszłej karierze zawodowej."
-            bgColor="coffee-400"
+            bgColor="coffee-600"
           />
         </div>
       </div>
@@ -44,7 +44,7 @@ const Project = () => {
           />
           <Flashcard
             text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, quos nobis sit minima fugit, tempora minus consequatur debitis voluptate obcaecati reiciendis vero tempore repellendus assumenda a sint, magnam repellat maiores."
-            bgColor="coffee-600"
+            bgColor="coffee-500"
           />
         </div>
         <div className="w-1/4 flex flex-col justify-center">
@@ -58,19 +58,19 @@ const Project = () => {
           title="ZAUFAŁO NAM..."
           number="1000"
           desc="kursantów"
-          bgColor="coffee-400"
+          bgColor="coffee-800"
         />
         <Stat
           title="MAMY PONAD..."
           number="20"
           desc="lat doświadczenia"
-          bgColor="coffee-200"
+          bgColor="coffee-900"
         />
         <Stat
           title="POMAGA NAM..."
           number="50"
           desc="doświadczonych kucharzy"
-          bgColor="coffee-600"
+          bgColor="coffee-700"
         />
       </div>
     </div>

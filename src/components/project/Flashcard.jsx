@@ -1,14 +1,10 @@
 /* eslint-disable react/prop-types */
-const Flashcard = (props) => {
-  const bgColors = {
-    "coffee-200": "bg-coffee-200",
-    "coffee-400": "bg-coffee-400",
-    "coffee-600": "bg-coffee-600",
-  };
+import colors from "../../js/colors";
 
+const Flashcard = (props) => {
   return (
     <div
-      className={`info ${bgColors[props.bgColor]} rounded-xl p-3 text-justify`}
+      className={`info ${colors.bg[props.bgColor]} rounded-xl p-3 text-justify border-2 border-coffee-800`}
     >
       <p className={`text-lg`}>{props.text}</p>
     </div>
