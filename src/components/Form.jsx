@@ -13,8 +13,8 @@ const Form = () => {
   });
 
   return (
-    <div id="sign-up" className="my-10 flex gap-10 justify-center">
-      <div className="flex flex-col left w-2/3">
+    <div id="sign-up" className="my-10 md:flex md:justify-center flex-none">
+      <div className="flex flex-col 2xl:w-3/5 lg:w-4/5 md:w-5/6">
         <SectionHeader text="DOŁĄCZ TERAZ" />
         <div className="p-5 bg-coffee-500  rounded-xl border-2 border-coffee-800">
           <div className="mx-auto">
@@ -38,7 +38,7 @@ const Form = () => {
                     id="error-name"
                     className="form-error mb-1 ml-2 text-rose-600 text-sm"
                   >
-                    Przykładowy komunikat oznaczający bład
+                    .
                   </p>
                 </div>
                 <div className="flex flex-col right w-3/5">
@@ -59,7 +59,7 @@ const Form = () => {
                     id="error-surname"
                     className="form-error mb-1 ml-2 text-rose-600 text-sm"
                   >
-                    Przykładowy komunikat oznaczający bład
+                    .
                   </p>
                 </div>
               </div>
@@ -81,7 +81,7 @@ const Form = () => {
                 id="error-email"
                 className="form-error mb-3 ml-2 text-rose-600 text-sm"
               >
-                Przykładowy komunikat oznaczający bład
+                .
               </p>
 
               <div className="flex gap-10">
@@ -103,7 +103,7 @@ const Form = () => {
                     id="error-nr"
                     className="form-error mb-1 ml-2 text-rose-600 text-sm"
                   >
-                    Przykładowy komunikat oznaczający bład
+                    .
                   </p>
                 </div>
                 <div className="flex flex-col left w-3/5">
@@ -123,9 +123,7 @@ const Form = () => {
                   <p
                     id="error-street"
                     className="form-error mb-1 ml-2 text-rose-600 text-sm"
-                  >
-                    Przykładowy komunikat oznaczający bład
-                  </p>
+                  ></p>
                 </div>
               </div>
 
@@ -148,7 +146,7 @@ const Form = () => {
                     id="error-zip-code"
                     className="form-error ml-2 text-rose-600 text-sm"
                   >
-                    Przykładowy komunikat oznaczający bład
+                    .
                   </p>
                 </div>
 
@@ -170,7 +168,7 @@ const Form = () => {
                     id="error-city"
                     className="form-error ml-2 text-rose-600 text-sm"
                   >
-                    Przykładowy komunikat oznaczający bład
+                    .
                   </p>
                 </div>
               </div>
@@ -199,7 +197,7 @@ const Form = () => {
                 id="error-age-group"
                 className="form-error mb-1 ml-2 text-rose-600 text-sm"
               >
-                Przykładowy komunikat oznaczający bład
+                .
               </p>
 
               {/*----- TERMIN -----  */}
@@ -227,7 +225,7 @@ const Form = () => {
                 id="error-term"
                 className="form-error mb-3 ml-2 text-rose-600 text-sm"
               >
-                Przykładowy komunikat oznaczający bład
+                .
               </p>
 
               {/*----- SUBMIT -----  */}
@@ -243,14 +241,6 @@ const Form = () => {
           </div>
         </div>
       </div>
-
-      {/* MAPA ??? */}
-      {/* <aside className="right w-1/3 rounded-xl flex flex-col content-stretch">
-        <SectionHeader text="KONTAKT" />
-        <div className="bg-coffee-200">
-
-        </div>
-      </aside> */}
     </div>
   );
 };

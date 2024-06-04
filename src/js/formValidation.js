@@ -33,7 +33,7 @@ function formValidation() {
         zipcode: "Kod pocztowy nie jest poprawny!",
         city: {
             len: "Nazwa miejscowości jest za długa!",
-            regex: "Nazwa miejscowości zawiera niedozwolone znaki!",
+            regex: "Nazwa zawiera niedozwolone znaki!",
         },
     };
     const maxLengths = {
