@@ -5,6 +5,7 @@ import Form from "./components/Form";
 import Alert from "./components/Alert";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import Offer from "./components/Offer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Header />
           <Project />
           <About />
+          <Offer/>
           <Form />
         </main>
         <Footer/>
