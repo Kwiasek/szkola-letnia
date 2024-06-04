@@ -9,8 +9,8 @@ const Project = () => {
         CZYM SĄ LETNIE SMAKI?
       </h1>
 
-      <div className="module flex gap-10 mb-10 align-middle">
-        <div className="w-1/4 flex flex-col justify-center">
+      <div className="module flex md:flex-row flex-col items-center gap-10 mb-10 align-middle md:p-0 sm:p-5 p-0">
+        <div className="w-1/4 md:flex flex-col justify-center hidden">
           <img
             src="patelnia.png"
             alt="obrazek patelni ze składnikami"
@@ -18,7 +18,7 @@ const Project = () => {
           />
         </div>
 
-        <div className="flex flex-col w-3/4 gap-5">
+        <div className="flex flex-col md:w-3/4 w-1/1 gap-5">
           <SectionHeader text="Cel projektu" />
           <Flashcard
             text='Celem projektu "Letnia Szkoła Kulinarna" jest stworzenie inspirującej przestrzeni, gdzie studenci i młodzież mogą rozwijać swoje umiejętności kulinarne, zdobywając teoretyczną i praktyczną wiedzę z zakresu gotowania i zdrowego odżywiania.'
@@ -35,8 +35,8 @@ const Project = () => {
         </div>
       </div>
 
-      <div className="module flex gap-10 mb-10 align-middle">
-        <div className="flex flex-col w-3/4 gap-5">
+      <div className="module flex md:flex-row flex-col items-center gap-10 mb-10 align-middle md:p-0 sm:p-5 p-0">
+        <div className="flex flex-col md:w-3/4 w-1/1 gap-5">
           <SectionHeader text="Nasza historia" />
           <Flashcard
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, architecto! Facilis, commodi? Nemo incidunt excepturi accusamus itaque veniam repellat autem nisi? Fugiat, architecto accusamus nemo qui odio vel, rerum veniam quis deleniti nam, maxime quasi!"
@@ -47,13 +47,13 @@ const Project = () => {
             bgColor="coffee-500"
           />
         </div>
-        <div className="w-1/4 flex flex-col justify-center">
+        <div className="w-1/4 md:flex flex-col justify-center hidden">
           <img src="talerz2.png" alt="talerz z jedzeniem" />
         </div>
       </div>
 
       <SectionHeader text="Nasze statystyki" />
-      <div className="stats flex justify-between gap-20">
+      <div className="stats flex md:flex-row flex-col md:justify-between justify-normal md:items-stretch items-center xl:gap-20 md:gap-10 gap-5">
         <Stat
           title="ZAUFAŁO NAM..."
           number="1000"

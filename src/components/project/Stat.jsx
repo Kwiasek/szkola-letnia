@@ -5,7 +5,7 @@ import colors from "../../js/colors";
 const Stat = (props) => {
   return (
     <div
-      className={`stat w-1/3 ${
+      className={`stat md:w-1/3 w-1/2 ${
         colors.bg[props.bgColor]
       } rounded-xl p-5 text-center font-bold border-2 border-black text-coffee-100`}
     >
