@@ -6,3 +6,25 @@
   scroll-behavior: smooth;
   scroll-padding-top: 64px;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1e4da;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #877670 ;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6f625d;
+}
