@@ -8,20 +8,20 @@ import About from "./components/About";
 
 function App() {
   return (
-    <div>
+    <div className="w-screen">
       <div id="alert" className="hidden">
         <Alert />
       </div>
 
       <div className="flex flex-col">
         <Nav />
-        <main className="xl:w-3/4 lg:w-4/5 max-w-screen md:mx-auto scroll-smooth">
-          <Header />
+        <Header />
+        <main className="xl:w-3/4 lg:w-4/5 w-screen md:mx-auto scroll-smooth">
           <Project />
           <About />
           <Form />
         </main>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
