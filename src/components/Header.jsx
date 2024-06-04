@@ -1,8 +1,28 @@
+import { useEffect, useState } from "react";
+
 const Header = () => {
+  const [height, setHeight] = useState(window.innerHeight - 64);
+
+  useEffect(() => {
+    const updateWindowDimensions = () => {
+      const newHeight = window.innerHeight - 64;
+      setHeight(newHeight);
+    };
+
+    window.addEventListener("resize", updateWindowDimensions);
+
+    return () => window.removeEventListener("resize", updateWindowDimensions);
+  }, []);
+
   return (
-    <div className="h-[450px] bg-coffee mx-auto rounded-xl px-10 py-10 relative flex justify-center items-center">
-      <img src="talerz.png" className="absolute top-0 right-0" />
-      <p className=" text-6xl text-gray-600">Letnie smaki</p>
+    <div
+      className={`bg-coffee mx-auto flex justify-center items-center`}
+      style={{ height: height + "px" }}
+      id="header"
+    >
+      <p className=" text-7xl text-gray-600 font-kalam font-bold select-none">
+        Letnie smaki
+      </p>
     </div>
   );
 };
