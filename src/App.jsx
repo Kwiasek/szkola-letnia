@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import Project from "./components/Project";
 import Form from "./components/Form";
 import Alert from "./Alert";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           </div>
           <Form />
         </main>
+        <Footer/>
       </div>
     </div>
   );
