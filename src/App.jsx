@@ -4,6 +4,7 @@ import Project from "./components/Project";
 import Form from "./components/Form";
 import Alert from "./Alert";
 import Footer from "./components/Footer";
+import About from "./components/About";
 
 function App() {
   return (
@@ -14,15 +15,10 @@ function App() {
 
       <div className="flex flex-col">
         <Nav />
-        <main className="w-3/4 md:mx-auto md:container">
-          {/* <Header /> */}
+        <main className="w-3/4 md:mx-auto md:container scroll-smooth">
+          <Header />
           <Project />
-          <div className="flex flex-row gap-5 mt-5">
-            <div className="w-3/4 h-[300px] bg-orange rounded-lg">asd</div>
-            <div className="w-3/4 h-[400px] bg-hero rounded-lg bg-cover bg-no-repeat bg-center">
-              asd
-            </div>
-          </div>
+          <About />
           <Form />
         </main>
         <Footer/>
