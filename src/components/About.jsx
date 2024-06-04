@@ -1,4 +1,4 @@
-import Carousel from "./carousel/Carousel";
+import PersonCard from "./about/PersonCard";
 import SectionHeader from "./project/SectionHeader";
 
 const About = () => {
@@ -31,8 +31,30 @@ const About = () => {
           </p>
         </div>
       </div>
-
-      <Carousel />
+      <div className="flex gap-10 mt-20 items-center justify-center">
+        <PersonCard
+          name="Gordon Ramsey"
+          position="Kucharz"
+          img="Gordon-Ramsay.webp"
+          text="Lorem ipsum asdasjkdhahjklsbdasd"
+          bgColor={"coffee-600"}
+        />
+        <PersonCard
+          name="Gordon Ramsey"
+          position="Kucharz"
+          img="Gordon-Ramsay.webp"
+          text="Lorem ipsum asdasjkdhahjklsbdasd"
+          height={530}
+          bgColor={"coffee-800"}
+        />
+        <PersonCard
+          name="Gordon Ramsey"
+          position="Kucharz"
+          img="Gordon-Ramsay.webp"
+          text="Lorem ipsum asdasjkdhahjklsbdasd"
+          bgColor={"coffee-600"}
+        />
+      </div>
     </div>
   );
 };
