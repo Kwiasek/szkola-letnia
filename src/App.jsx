@@ -17,7 +17,7 @@ function App() {
       <div className="flex flex-col">
         <Nav />
         <Header />
-        <main className="xl:w-3/4 lg:w-4/5 w-screen md:mx-auto scroll-smooth">
+        <main className="xl:w-3/4 lg:w-4/5 w-screen md:mx-auto scroll-smooth px-3">
           <Project />
           <About />
           <Offer/>

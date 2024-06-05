@@ -3,13 +3,13 @@ import SectionHeader from "./project/SectionHeader";
 
 const About = () => {
   return (
-    <div id="about" className="my-10 w-3/4 md:w-full mx-auto">
+    <div id="about" className="my-10 w-full mx-auto">
       <SectionHeader text={"O nas"} />
 
-      <div className="flex flex-col lg:flex-row my-5 py-10 justify-between gap-8 px-10 h-max shrink bg-coffee-800 text-white rounded-xl border-black border-2">
+      <div className="flex flex-col xl:flex-row my-5 md:p-10 p-5 justify-between gap-8 h-max shrink bg-coffee-800 text-white rounded-xl border-black border-2">
         <img
           src="close-up-woman-hand-put-topping-homemade-pizza.jpg"
-          className="rounded-xl max-w-max lg:max-w-md aspect-auto shrink"
+          className="rounded-xl max-w-max xl:max-w-md aspect-auto shrink"
         />
         <div className="">
           <h2 className="text-4xl text-center font-bold pb-4">Nasz zespół</h2>

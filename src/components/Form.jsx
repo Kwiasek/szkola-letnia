@@ -19,8 +19,8 @@ const Form = () => {
         <div className="p-5 bg-coffee-500  rounded-xl border-2 border-coffee-800">
           <div className="mx-auto">
             <form className="flex flex-col" method="POST">
-              <div className="flex gap-10">
-                <div className="flex flex-col left w-2/5">
+              <div className="flex sm:flex-row flex-col sm:gap-10">
+                <div className="flex flex-col left sm:w-2/5 w-1/1">
                   {/*----- IMIE -----  */}
                   <label
                     className="text-lg font-semibold tracking-wide ml-2"
@@ -41,7 +41,7 @@ const Form = () => {
                     .
                   </p>
                 </div>
-                <div className="flex flex-col right w-3/5">
+                <div className="flex flex-col right sm:w-3/5 w-1/1">
                   {/*----- NAZWISKO -----  */}
                   <label
                     className="text-lg font-semibold tracking-wide ml-2"
@@ -79,13 +79,13 @@ const Form = () => {
               />
               <p
                 id="error-email"
-                className="form-error mb-3 ml-2 text-rose-600 text-sm"
+                className="form-error sm:mb-3 mb-5 ml-2 text-rose-600 text-sm"
               >
                 .
               </p>
 
-              <div className="flex gap-10">
-                <div className="flex flex-col left w-2/5">
+              <div className="flex sm:flex-row flex-col sm:gap-10">
+                <div className="flex flex-col left sm:w-2/5 w-1/1">
                   {/*----- NR DOMU -----  */}
                   <label
                     className="text-lg font-semibold tracking-wide ml-2"
@@ -106,7 +106,7 @@ const Form = () => {
                     .
                   </p>
                 </div>
-                <div className="flex flex-col left w-3/5">
+                <div className="flex flex-col left sm:w-3/5 w-1/1">
                   {/*----- ULICA -----  */}
                   <label
                     className="text-lg font-semibold tracking-wide ml-2"
@@ -127,8 +127,8 @@ const Form = () => {
                 </div>
               </div>
 
-              <div className="flex gap-10 mb-3">
-                <div className="flex flex-col left w-2/5">
+              <div className="flex sm:flex-row flex-col sm:gap-10 gap-3 mb-5">
+                <div className="flex flex-col left sm:w-2/5 w-1/1">
                   {/*----- KOD POCZTOWY -----  */}
                   <label
                     className="text-lg font-semibold tracking-wide ml-2"
@@ -150,7 +150,7 @@ const Form = () => {
                   </p>
                 </div>
 
-                <div className="flex flex-col right w-3/5">
+                <div className="flex flex-col right sm:w-3/5 w-1/1">
                   {/*----- MIEJSCOWOSC -----  */}
                   <label
                     className="text-lg font-semibold tracking-wide ml-2"

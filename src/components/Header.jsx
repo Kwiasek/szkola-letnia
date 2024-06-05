@@ -22,11 +22,11 @@ const Header = () => {
       id="header"
     >
       <ParticlesComponent />
-      <p className="text-7xl text-gray-600 font-kalam font-bold select-none">
+      <p className="sm:text-7xl text-5xl text-gray-600 font-kalam font-bold select-none">
         Letnie smaki
       </p>
       <a
-        className="absolute bottom-14 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-bounce"
+        className="absolute bottom-14 left-[calc(1/2 - 35/2px)] transform -translate-x-1/2 -translate-y-1/2 animate-bounce"
         href="#project"
       >
         <KeyboardDoubleArrowDownIcon fontSize="large" />

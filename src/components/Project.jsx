@@ -5,7 +5,7 @@ import Stat from "./project/Stat";
 const Project = () => {
   return (
     <div id="project" className="about-project font-mono">
-      <h1 className="text-5xl font-bold text-center mb-10">
+      <h1 className="text-5xl font-bold text-center mb-10 p-5">
         CZYM SĄ LETNIE SMAKI?
       </h1>
 
