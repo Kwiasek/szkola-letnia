@@ -13,10 +13,6 @@ const ParticlesComponent = () => {
     });
   }, []);
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
-
   const options = useMemo(
     () => ({
       background: {
@@ -89,7 +85,6 @@ const ParticlesComponent = () => {
     return (
       <Particles
         options={options}
-        particlesLoaded={particlesLoaded}
         className={`absolute h-screen z-[-10] w-full`}
       />
     );
