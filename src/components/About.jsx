@@ -36,22 +36,21 @@ const About = () => {
           name="Gordon Ramsey"
           position="Kucharz"
           img="Gordon-Ramsay.webp"
-          text="Lorem ipsum asdasjkdhahjklsbdasd"
+          text="Lorem ipsum loremaklsmdalsdhlah akjlsdljkasdj ahsjkd ajkhsdj haslkjdhaljkh djkahd jkashdklasdh kjahsdad"
           bgColor={"coffee-600"}
         />
         <PersonCard
           name="Gordon Ramsey"
           position="Kucharz"
           img="Gordon-Ramsay.webp"
-          text="Lorem ipsum asdasjkdhahjklsbdasd"
-          height={530}
-          bgColor={"coffee-800"}
+          text="Lorem ipsum loremaklsmdalsdhlah akjlsdljkasdj ahsjkd ajkhsdj haslkjdhaljkh djkahd jkashdklasdh kjahsdad"
+          bgColor={"coffee-600"}
         />
         <PersonCard
           name="Gordon Ramsey"
           position="Kucharz"
           img="Gordon-Ramsay.webp"
-          text="Lorem ipsum asdasjkdhahjklsbdasd"
+          text="Lorem ipsum loremaklsmdalsdhlah akjlsdljkasdj ahsjkd ajkhsdj haslkjdhaljkh djkahd jkashdklasdh kjahsdad"
           bgColor={"coffee-600"}
         />
       </div>
