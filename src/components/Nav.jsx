@@ -14,7 +14,7 @@ const Nav = () => {
           ["Dołącz teraz", "#sign-up"],
         ].map(([title, url]) => {
           return title === "Dołącz teraz" ? (
-            <a href={url} className="px-3 py-1 rounded-xl border-2">
+            <a href={url} className="px-3 py-1 rounded-xl border-2" key={title}>
               {title}
             </a>
           ) : (
