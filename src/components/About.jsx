@@ -3,13 +3,13 @@ import SectionHeader from "./project/SectionHeader";
 
 const About = () => {
   return (
-    <div id="about" className="my-10">
+    <div id="about" className="my-10 w-3/4 md:w-full mx-auto">
       <SectionHeader text={"O nas"} />
 
-      <div className="flex my-5 py-10 justify-between gap-8 px-10 h-[450px] bg-coffee-800 text-white rounded-xl border-black border-2">
+      <div className="flex flex-col lg:flex-row my-5 py-10 justify-between gap-8 px-10 h-max shrink bg-coffee-800 text-white rounded-xl border-black border-2">
         <img
           src="close-up-woman-hand-put-topping-homemade-pizza.jpg"
-          className="rounded-xl"
+          className="rounded-xl max-w-max lg:max-w-md aspect-auto shrink"
         />
         <div className="">
           <h2 className="text-4xl text-center font-bold pb-4">Nasz zespół</h2>
@@ -31,7 +31,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="flex gap-10 mt-20 items-center justify-center">
+      <div className="flex md:flex-row gap-5 md:gap-10 lg:mt-20 items-center justify-center flex-wrap">
         <PersonCard
           name="Gordon Ramsey"
           position="Kucharz"
