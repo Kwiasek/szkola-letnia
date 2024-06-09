@@ -50,21 +50,24 @@ const Footer = () => {
         <h4 className="text-xl mb-5">Social Media</h4>
         <div className="flex md:flex-col sm:flex-row flex-col md:gap-2 gap-5">
           <a
-            href=""
+            href="https://www.instagram.com/gordongram/"
+            target="_blank"
             className="flex gap-1 text-coffee-400 hover:text-pink-300 focus:text-pink-300 transition max-w-max"
           >
             <InstagramIcon />
             <p>Instagram</p>
           </a>
           <a
-            href=""
+            href="https://www.facebook.com/gordonramsay/?locale=pl_PL"
+            target="_blank"
             className="flex gap-1 text-coffee-400 hover:text-blue-400 focus:text-blue-400 transition max-w-max"
           >
             <FacebookIcon />
             <p>Facebook</p>
           </a>
           <a
-            href=""
+            href="https://www.youtube.com/@gordonramsay/videos"
+            target="_blank"
             className="flex gap-1 text-coffee-400 hover:text-red-400 focus:text-red-400 transition max-w-max"
           >
             <YouTubeIcon />
