@@ -55,7 +55,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="flex md:flex-row gap-5 md:gap-10 lg:mt-20 items-center justify-center flex-wrap">
+      <div className="flex md:flex-row gap-5 md:gap-10 lg:mt-20 items-stretch justify-center flex-wrap">
         {peoples.map((person) => {
           return (
             <PersonCard
