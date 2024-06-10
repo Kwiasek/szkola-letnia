@@ -17,8 +17,10 @@ const Nav = () => {
     return () => window.removeEventListener("resize", updateWindowDimensions);
   }, []);
 
-  const changeSetMenu = () => {
-    menu ? setMenu(false) : setMenu(true);
+  const changeSetMenu = (event) => {
+    if (event.target.getAttribute("id") !== "menu") {
+      menu ? setMenu(false) : setMenu(true);
+    }
   };
   return (
     <>
@@ -58,8 +60,14 @@ const Nav = () => {
           </a>
           <MenuIcon className="cursor-pointer" onClick={changeSetMenu} />
           {menu ? (
-            <div className="fixed top-0 left-0 h-screen w-screen transition flex justify-end z-10 bg-slate-900/30 backdrop-blur-sm">
-              <div className="flex flex-col items-end bg-white w-1/2 md:w-1/3 px-10 py-4">
+            <div
+              className="fixed top-0 left-0 h-screen w-screen transition flex justify-end z-10 bg-slate-900/30 backdrop-blur-sm"
+              onClick={changeSetMenu}
+            >
+              <div
+                className="flex flex-col items-end bg-white w-1/2 h-full md:w-1/3 px-10 py-4 z-100 select-none"
+                id="menu"
+              >
                 <CloseIcon
                   className="cursor-pointer mb-3"
                   onClick={changeSetMenu}
