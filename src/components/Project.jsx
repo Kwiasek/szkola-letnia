@@ -39,11 +39,11 @@ const Project = () => {
         <div className="flex flex-col md:w-3/4 w-1/1 gap-5">
           <SectionHeader text="Nasza historia" />
           <Flashcard
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, architecto! Facilis, commodi? Nemo incidunt excepturi accusamus itaque veniam repellat autem nisi? Fugiat, architecto accusamus nemo qui odio vel, rerum veniam quis deleniti nam, maxime quasi!"
+            text="Firma Maverick rozpoczęła swoją pracę 16.01.2002 roku, jako mały biznes. Zaczęło się od stworzenia grupy łączącej lokalnych amatorów gastronomii, oraz sprzedawanie swoich wyborów na miejskich i wiejskich świętach. Nie spodziewaliśmy się jednak, że nasza praca przyniesie takie owoce!"
             bgColor="coffee-400"
           />
           <Flashcard
-            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, quos nobis sit minima fugit, tempora minus consequatur debitis voluptate obcaecati reiciendis vero tempore repellendus assumenda a sint, magnam repellat maiores."
+            text="Po 6 latach ciężkiej pracy, udało nam się stworzyć sieć łączącą placówki w całej polsce. Dzięki szczerości i działaniu na zasadzie obustronnej pomocy, udało nam się rozwinąć na niespodziewaną skalę. W tym momencie, mamy kontrakty z wytwórcami produktów żywieniowych, rolnikami, cukiernikami, barmanami, szefami kuchni, i wiele, wiele więcej. Nie było łatwo, dwa razy prawie zakończyliśmy działalność, lecz nie poddaliśmy się, i parliśmy dalej. Dzięki temu, teraz możemy przekazywać nabytą wiedzę kolejnym pokoleniom."
             bgColor="coffee-500"
           />
         </div>
