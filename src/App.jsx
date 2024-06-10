@@ -9,7 +9,7 @@ import Offer from "./components/Offer";
 
 function App() {
   return (
-    <div className="w-screen">
+    <div className="w-screen text-coffee-900">
       <div id="alert" className="hidden">
         <Alert />
       </div>
@@ -20,7 +20,7 @@ function App() {
         <main className="xl:w-3/4 lg:w-4/5 w-screen md:mx-auto scroll-smooth px-3">
           <Project />
           <About />
-          <Offer/>
+          <Offer />
           <Form />
         </main>
         <Footer />

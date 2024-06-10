@@ -8,7 +8,7 @@ const Flashcard = (props) => {
         colors.bg[props.bgColor]
       } rounded-xl p-3 text-justify border-2 border-coffee-800`}
     >
-      <p className={`text-lg`}>{props.text}</p>
+      <p className="text-lg">{props.text}</p>
     </div>
   );
 };
