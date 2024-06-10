@@ -8,18 +8,21 @@ const About = () => {
       img: "okrasa.jpg",
       position: "Kucharz",
       desc: 'Szefuje warszawskiej restauracji "Platter", oraz jest jednym z najzdolniejszych i najbardziej rozpoznawalnych polskich szefów kuchni.',
+      imgPosition: "30%",
     },
     {
       name: "Maciej Mazur",
       img: "mazur.jpg",
       position: "Kucharz",
       desc: "Zajął 15 lokatę w  World Class Competition (najlepszy wynik reprezentanta Polski). Barman,  jest menedżerem baru w lokalu typu „speakeasy”.",
+      imgPosition: "100%",
     },
     {
       name: "Katarzyna Rogowska",
       img: "rogowska.jpg",
       position: "Kucharka",
       desc: "Reinterpretuje kuchnię śląską, podając ją w zupełnie nowej, finediningowej formie. Z zawodu artystka-plastyk, udowadnia, że oszczędność na talerzu nie oznacza braku smaku.",
+      imgPosition: "55%",
     },
   ];
 
@@ -62,6 +65,7 @@ const About = () => {
               img={person.img}
               text={person.desc}
               bgColor={"coffee-600"}
+              imgPosition={person.imgPosition}
             />
           );
         })}
