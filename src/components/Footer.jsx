@@ -13,16 +13,14 @@ const Footer = () => {
             <a href="#">Letnie smaki</a>
           </h3>
         </div>
-        <p className="text-sm text-coffee-400 leading-5">
-          Prowadzący:
-          <ul className="pt-1">
-            <li>Andrzej Pokora</li>
-            <li>Agnieszka Miraj</li>
-            <li>Michał Podborowski</li> <li>Maciej Mazur</li>
-            <li>Henryk Fiał</li>
-            <li>Piotr Dowbor</li>
-          </ul>
-        </p>
+        <p className="text-sm text-coffee-400 leading-5">Prowadzący:</p>
+        <ul className="pt-1 text-sm text-coffee-400">
+          <li>Andrzej Pokora</li>
+          <li>Agnieszka Miraj</li>
+          <li>Michał Podborowski</li> <li>Maciej Mazur</li>
+          <li>Henryk Fiał</li>
+          <li>Piotr Dowbor</li>
+        </ul>
       </div>
 
       <div className="flex flex-col md:w-1/6 sm:w-1/1 text-coffee-400 md:mb-0 mb-10">
