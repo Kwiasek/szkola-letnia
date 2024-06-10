@@ -59,7 +59,7 @@ const Nav = () => {
           <MenuIcon className="cursor-pointer" onClick={changeSetMenu} />
           {menu ? (
             <div className="fixed top-0 left-0 h-screen w-screen transition flex justify-end z-10 bg-slate-900/30">
-              <div className="flex flex-col items-end bg-white w-1/2 lg:w-1/3 px-10 py-4">
+              <div className="flex flex-col items-end bg-white w-1/2 md:w-1/3 px-10 py-4">
                 <CloseIcon
                   className="cursor-pointer mb-3"
                   onClick={changeSetMenu}
