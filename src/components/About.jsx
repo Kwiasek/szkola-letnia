@@ -2,6 +2,27 @@ import PersonCard from "./about/PersonCard";
 import SectionHeader from "./project/SectionHeader";
 
 const About = () => {
+  const peoples = [
+    {
+      name: "Karol Okrasa",
+      img: "okrasa.jpg",
+      position: "Kucharz",
+      desc: 'Szefuje warszawskiej restauracji "Platter", oraz jest jednym z najzdolniejszych i najbardziej rozpoznawalnych polskich szefów kuchni.',
+    },
+    {
+      name: "Maciej Mazur",
+      img: "mazur.jpg",
+      position: "Kucharz",
+      desc: "Zajął 15 lokatę w  World Class Competition (najlepszy wynik reprezentanta Polski). Barman,  jest menedżerem baru w lokalu typu „speakeasy”.",
+    },
+    {
+      name: "Katarzyna Rogowska",
+      img: "rogowska.jpg",
+      position: "Kucharka",
+      desc: "Reinterpretuje kuchnię śląską, podając ją w zupełnie nowej, finediningowej formie. Z zawodu artystka-plastyk, udowadnia, że oszczędność na talerzu nie oznacza braku smaku.",
+    },
+  ];
+
   return (
     <div id="about" className="my-10 w-full mx-auto">
       <SectionHeader text={"O nas"} />
@@ -32,27 +53,18 @@ const About = () => {
         </div>
       </div>
       <div className="flex md:flex-row gap-5 md:gap-10 lg:mt-20 items-center justify-center flex-wrap">
-        <PersonCard
-          name="Gordon Ramsey"
-          position="Kucharz"
-          img="Gordon-Ramsay.webp"
-          text="Lorem ipsum loremaklsmdalsdhlah akjlsdljkasdj ahsjkd ajkhsdj haslkjdhaljkh djkahd jkashdklasdh kjahsdad"
-          bgColor={"coffee-600"}
-        />
-        <PersonCard
-          name="Gordon Ramsey"
-          position="Kucharz"
-          img="Gordon-Ramsay.webp"
-          text="Lorem ipsum loremaklsmdalsdhlah akjlsdljkasdj ahsjkd ajkhsdj haslkjdhaljkh djkahd jkashdklasdh kjahsdad"
-          bgColor={"coffee-600"}
-        />
-        <PersonCard
-          name="Gordon Ramsey"
-          position="Kucharz"
-          img="Gordon-Ramsay.webp"
-          text="Lorem ipsum loremaklsmdalsdhlah akjlsdljkasdj ahsjkd ajkhsdj haslkjdhaljkh djkahd jkashdklasdh kjahsdad"
-          bgColor={"coffee-600"}
-        />
+        {peoples.map((person) => {
+          return (
+            <PersonCard
+              key={person.name}
+              name={person.name}
+              position={person.position}
+              img={person.img}
+              text={person.desc}
+              bgColor={"coffee-600"}
+            />
+          );
+        })}
       </div>
     </div>
   );
