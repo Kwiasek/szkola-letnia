@@ -9,12 +9,12 @@ import Offer from "./components/Offer";
 
 function App() {
   return (
-    <div className="w-screen text-coffee-900">
+    <div className="w-screen text-coffee-900 antialiased">
       <div id="alert" className="hidden">
         <Alert />
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col relative">
         <Nav />
         <Header />
         <main className="xl:w-3/4 lg:w-4/5 w-screen md:mx-auto scroll-smooth px-3">

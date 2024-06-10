@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <div
-      className={`bg-coffee w-full mx-auto flex justify-center items-center relative overflow-hidden`}
+      className={`bg-coffee w-full mx-auto flex justify-center items-center relative overflow-hidden mt-16`}
       style={{ height: height + "px" }}
       id="header"
     >
