@@ -9,26 +9,41 @@ const Footer = () => {
       <div className="md:w-1/3 sm:w-1/1 md:mb-0 mb-10">
         <div className="flex gap-1 hover:text-white transition">
           <LocalDiningIcon />
-          <h3 className="text-2xl mb-5"><a href="#">Letnie smaki</a></h3>
+          <h3 className="text-2xl mb-5">
+            <a href="#">Letnie smaki</a>
+          </h3>
         </div>
-        <p className="text-sm text-coffee-400">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et magnam
-          cum fugit repellat recusandae repellendus sed culpa deleniti eligendi
-          soluta excepturi facilis quas harum alias nobis placeat hic ratione
-          voluptatem natus aut similique, autem dolorem?
+        <p className="text-sm text-coffee-400 leading-5">
+          Prowadzący:
+          <ul className="pl-1">
+            <li>Andrzej Pokora</li>
+            <li>Agnieszka Miraj</li>
+            <li>Michał Podborowski</li> <li>Maciej Mazur</li>
+            <li>Henryk Fiał</li>
+            <li>Piotr Dowbor</li>
+          </ul>
         </p>
       </div>
 
       <div className="flex flex-col md:w-1/6 sm:w-1/1 text-coffee-400 md:mb-0 mb-10">
         <h4 className="text-xl mb-5 text-coffee-200">Zawartość</h4>
         <div className="flex md:flex-col sm:flex-row flex-col md:gap-2 gap-5">
-          <a href="#about" className="hover:text-coffee-200 focus:text-coffee-200 max-w-max transition">
+          <a
+            href="#about"
+            className="hover:text-coffee-200 focus:text-coffee-200 max-w-max transition"
+          >
             Poznaj nas
           </a>
-          <a href="#project" className="hover:text-coffee-200 focus:text-coffee-200 max-w-max transition">
+          <a
+            href="#project"
+            className="hover:text-coffee-200 focus:text-coffee-200 max-w-max transition"
+          >
             O projekcie
           </a>
-          <a href="#sign-up" className="hover:text-coffee-200 focus:text-coffee-200 max-w-max transition">
+          <a
+            href="#sign-up"
+            className="hover:text-coffee-200 focus:text-coffee-200 max-w-max transition"
+          >
             Dołącz teraz
           </a>
         </div>
