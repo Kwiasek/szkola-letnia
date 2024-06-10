@@ -1,11 +1,9 @@
 import createAlert from "./alerts";
 
 function formValidation() {
-    console.log("Form validation...");
-
     // --- SETTINGS ---
     // ! Keys values in settings and errorFields should be identical to avoid problems with functions !
-    
+
     const invisible = "opacity-0";
     const visible = "opacity-100";
     const errorMessages = {
@@ -48,9 +46,9 @@ function formValidation() {
         name: " aąbcćdeęfghijklłmnńoópqrsśtuvwxyzźż-",
         surname: " aąbcćdeęfghijklłmnńoópqrsśtuvwxyzźż-.",
         city: " aąbcćdeęfghijklłmnńoópqrsśtuvwxyzźż-",
-    }
+    };
 
-    // --- FORMS FIELDS --- 
+    // --- FORMS FIELDS ---
     const nameField = document.querySelector("#name");
     const surnameField = document.querySelector("#surname");
     const emailField = document.querySelector("#email");
@@ -90,7 +88,7 @@ function formValidation() {
     validateAgeGroup();
     validateTerm();
 
-    if(isFormValid) {
+    if (isFormValid) {
         createAlert("Przyjeliśmy twoje zgłoszenie!");
         clearForm();
     }
@@ -102,8 +100,8 @@ function formValidation() {
     function validateName() {
         let input = nameField.value.trim();
 
-        if (isFieldEmpty(input, 'name')) return;
-        if (isInputTooLong(input, 'name')) return;
+        if (isFieldEmpty(input, "name")) return;
+        if (isInputTooLong(input, "name")) return;
 
         for (const letter of input) {
             if (isDigit(letter)) {
@@ -122,8 +120,8 @@ function formValidation() {
     function validateSurname() {
         let input = surnameField.value.trim();
 
-        if (isFieldEmpty(input, 'surname')) return;
-        if (isInputTooLong(input, 'surname')) return;
+        if (isFieldEmpty(input, "surname")) return;
+        if (isInputTooLong(input, "surname")) return;
 
         for (const letter of input) {
             if (isDigit(letter)) {
@@ -141,10 +139,11 @@ function formValidation() {
     }
     function validateEmail() {
         let input = emailField.value.trim();
-        const validRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const validRegex =
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-        if (isFieldEmpty(input, 'email')) return;
-        if (isInputTooLong(input, 'email')) return;
+        if (isFieldEmpty(input, "email")) return;
+        if (isInputTooLong(input, "email")) return;
 
         if (!input.match(validRegex)) {
             isFormValid = false;
@@ -155,20 +154,20 @@ function formValidation() {
     function validateHouseNr() {
         let input = houseNrField.value.trim();
 
-        if (isFieldEmpty(input, 'nr')) return;
-        if (isInputTooLong(input, 'nr')) return;
+        if (isFieldEmpty(input, "nr")) return;
+        if (isInputTooLong(input, "nr")) return;
     }
     function validateStreet() {
         let input = streetField.value.trim();
 
-        if (isFieldEmpty(input, 'street')) return;
-        if (isInputTooLong(input, 'street')) return;
+        if (isFieldEmpty(input, "street")) return;
+        if (isInputTooLong(input, "street")) return;
     }
     function validateZipCode() {
         let input = zipCodeField.value.trim();
         const validRegex = /^[0-9]{2}-[0-9]{3}$/;
 
-        if (isFieldEmpty(input, 'zipcode')) return;
+        if (isFieldEmpty(input, "zipcode")) return;
 
         if (!input.match(validRegex)) {
             isFormValid = false;
@@ -179,8 +178,8 @@ function formValidation() {
     function validateCity() {
         let input = cityField.value.trim();
 
-        if (isFieldEmpty(input, 'city')) return;
-        if (isInputTooLong(input, 'city')) return;
+        if (isFieldEmpty(input, "city")) return;
+        if (isInputTooLong(input, "city")) return;
 
         for (const letter of input) {
             if (!acceptedChars.city.includes(letter.toLowerCase())) {
