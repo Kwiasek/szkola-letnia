@@ -42,6 +42,11 @@ const Offer = () => {
           <li>Lipiec (5 - 27)</li>
           <li>Sierpień (3 - 24)</li>
         </ul>
+        <br />
+        <p>
+          Lokalizacja:
+          <br /> Ośrodek Kempingowy <b>„Rusałka”</b> koło Węgorzewa
+        </p>
       </div>
     </section>
   );
