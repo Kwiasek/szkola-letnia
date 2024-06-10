@@ -38,11 +38,11 @@ const About = () => {
         <div className="flex flex-col gap-4 indent-5 tracking-wide leading-6">
           <h2 className="text-4xl text-center font-bold pb-4">Nasz zespół</h2>
           <p>
-            <b>Anna Zdabacz</b> - team leaderka "zespołu ds. słodyczy" ,
-            pasjonatka cukiernictwa, artystka. Wszystko co się świeci lub jest
-            ładnie udekorowane jest bliskie jej sercu. Ma ponad 25 lat
-            doświadczenia w branży, lauretka nagród Golden Plate (1991) oraz
-            Spice Stack (2005). Niezrównana w swoim polu
+            <b>Anna Zdabacz</b> - team leaderka &quot;zespołu ds.
+            słodyczy&quot;, pasjonatka cukiernictwa, artystka. Wszystko co się
+            świeci lub jest ładnie udekorowane jest bliskie jej sercu. Ma ponad
+            25 lat doświadczenia w branży, lauretka nagród Golden Plate (1991)
+            oraz Spice Stack (2005). Niezrównana w swoim polu.
           </p>
           <p>
             <b>Michał Podborowski</b> - leader działów logistyka oraz finanse,
@@ -54,10 +54,10 @@ const About = () => {
           <p>
             <b>Agnieszka Miraj</b> - znana szefowa kuchni, partnerka biznesowa
             Magdy Gessler. Jest z nami od początku istnienia firmy, jest jednym
-            z jej filarów. Jej potrawy są uznawane przez wielu za "szczytowa
-            forma sztuki w prostocie". Niezastąpiona w swojej roli, pomogła
-            setkom młodych kucharzy i kucharek rozwinąć skrzydła, nie tylko w
-            dziedzinie gastronomii.
+            z jej filarów. Jej potrawy są uznawane przez wielu za
+            &quot;szczytowa forma sztuki w prostocie&quot;. Niezastąpiona w
+            swojej roli, pomogła setkom młodych kucharzy i kucharek rozwinąć
+            skrzydła, nie tylko w dziedzinie gastronomii.
           </p>
         </div>
       </div>

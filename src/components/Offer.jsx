@@ -5,7 +5,7 @@ const Offer = () => {
     <section>
       <SectionHeader text="Nasza oferta" />
       <div className="bg-coffee-400 border-2 border-coffee-600 rounded-xl p-5">
-        <p className="leading-7 indent-5 tracking-wide">
+        <p className="leading-7 tracking-wide">
           Szukasz okazji do podszlifowania swoich umiejętności, lub znajomych,
           którzy dzielą twoją pasję? A może chcesz dopiero zacząć przygodę z
           gotowaniem? W takim razie, nasza szkoła letnia jest wprost stworzona
