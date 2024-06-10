@@ -13,7 +13,7 @@ const About = () => {
     {
       name: "Maciej Mazur",
       img: "mazur.jpg",
-      position: "Kucharz",
+      position: "Barman",
       desc: "Zajął 15 lokatę w  World Class Competition (najlepszy wynik reprezentanta Polski). Barman,  jest menedżerem baru w lokalu typu „speakeasy”.",
       imgPosition: "100%",
     },
