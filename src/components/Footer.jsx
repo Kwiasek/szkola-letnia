@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
         <p className="text-sm text-coffee-400 leading-5">
           Prowadzący:
-          <ul className="pl-1">
+          <ul className="pt-1">
             <li>Andrzej Pokora</li>
             <li>Agnieszka Miraj</li>
             <li>Michał Podborowski</li> <li>Maciej Mazur</li>
