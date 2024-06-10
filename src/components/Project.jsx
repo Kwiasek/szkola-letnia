@@ -22,15 +22,15 @@ const Project = () => {
           <SectionHeader text="Cel projektu" />
           <Flashcard
             text='Celem projektu "Letnia Szkoła Kulinarna" jest stworzenie inspirującej przestrzeni, gdzie studenci i młodzież mogą rozwijać swoje umiejętności kulinarne, zdobywając teoretyczną i praktyczną wiedzę z zakresu gotowania i zdrowego odżywiania.'
-            bgColor="coffee-500"
-          />
-          <Flashcard
-            text="Program stawia na naukę samodzielności w przygotowywaniu posiłków, promując współpracę zespołową i kreatywność poprzez wspólne projekty i warsztaty."
             bgColor="coffee-400"
           />
           <Flashcard
+            text="Program stawia na naukę samodzielności w przygotowywaniu posiłków, promując współpracę zespołową i kreatywność poprzez wspólne projekty i warsztaty."
+            bgColor="coffee-300"
+          />
+          <Flashcard
             text="Zajęcia praktyczne, warsztaty tematyczne, wykłady oraz spotkania z profesjonalnymi kucharzami i dietetykami umożliwią uczestnikom zdobycie umiejętności przydatnych w codziennym życiu i przyszłej karierze zawodowej."
-            bgColor="coffee-600"
+            bgColor="coffee-500"
           />
         </div>
       </div>
