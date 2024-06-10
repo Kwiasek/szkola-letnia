@@ -35,23 +35,29 @@ const About = () => {
           src="close-up-woman-hand-put-topping-homemade-pizza.jpg"
           className="rounded-xl max-w-max xl:max-w-md aspect-auto shrink"
         />
-        <div className="">
+        <div className="flex flex-col gap-4 indent-5 tracking-wide leading-6">
           <h2 className="text-4xl text-center font-bold pb-4">Nasz zespół</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            tempus urna massa, sed pellentesque lectus lacinia sit amet. Etiam
-            in eros non ex iaculis vehicula eget nec urna. Cras sed convallis
-            mi. Donec ornare volutpat vestibulum. Nulla facilisis sodales metus
-            nec rhoncus. Sed nibh augue, commodo ut sapien elementum,
-            sollicitudin ultrices nulla. Aenean accumsan neque lorem,
-            condimentum pretium lectus scelerisque nec. Curabitur suscipit
-            aliquam fermentum. Sed congue ante at magna pharetra, sed
-            sollicitudin nulla eleifend. Nulla quis enim nec erat tempor
-            vulputate sit amet in massa. Mauris vestibulum iaculis nibh, ac
-            auctor eros posuere eget. Suspendisse posuere magna a orci faucibus
-            euismod. Donec augue diam, tincidunt in tincidunt vel, aliquet at
-            neque. Donec aliquet egestas imperdiet. Sed euismod ut nulla ac
-            ultricies.
+            <b>Anna Zdabacz</b> - team leaderka "zespołu ds. słodyczy" ,
+            pasjonatka cukiernictwa, artystka. Wszystko co się świeci lub jest
+            ładnie udekorowane jest bliskie jej sercu. Ma ponad 25 lat
+            doświadczenia w branży, lauretka nagród Golden Plate (1991) oraz
+            Spice Stack (2005). Niezrównana w swoim polu
+          </p>
+          <p>
+            <b>Michał Podborowski</b> - leader działów logistyka oraz finanse,
+            dzięki niemu byliśmy w stanie wspiąć się tak wysoko. Najlepszy i
+            najbardziej uczciwy handlarz jakiego znam, jego sieć kontaktów
+            rozciąga się jeszcze dalej niż moja. Jeden z mentorów w szkole
+            letniej.
+          </p>
+          <p>
+            <b>Agnieszka Miraj</b> - znana szefowa kuchni, partnerka biznesowa
+            Magdy Gessler. Jest z nami od początku istnienia firmy, jest jednym
+            z jej filarów. Jej potrawy są uznawane przez wielu za "szczytowa
+            forma sztuki w prostocie". Niezastąpiona w swojej roli, pomogła
+            setkom młodych kucharzy i kucharek rozwinąć skrzydła, nie tylko w
+            dziedzinie gastronomii.
           </p>
         </div>
       </div>
