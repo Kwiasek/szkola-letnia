@@ -18,8 +18,16 @@ const Nav = () => {
   }, []);
 
   const changeSetMenu = (event) => {
+    console.log("click");
     if (event.target.getAttribute("id") !== "menu") {
       menu ? setMenu(false) : setMenu(true);
+    }
+    if (menu) {
+      document.querySelector("#sliding").classList.add("menu-visible");
+      document.querySelector("#sliding").classList.remove("menu-hidden");
+    } else {
+      document.querySelector("#sliding").classList.add("menu-hidden");
+      document.querySelector("#sliding").classList.remove("menu-visible");
     }
   };
   return (
@@ -59,43 +67,40 @@ const Nav = () => {
             Letnie smaki
           </a>
           <MenuIcon className="cursor-pointer" onClick={changeSetMenu} />
-          {menu ? (
+          <div
+            id="sliding"
+            className="menu-hidden fixed top-0 left-0 h-screen w-screen transition flex justify-end z-10 bg-slate-900/30 backdrop-blur-sm"
+            onClick={changeSetMenu}
+          >
             <div
-              className="fixed top-0 left-0 h-screen w-screen transition flex justify-end z-10 bg-slate-900/30 backdrop-blur-sm"
-              onClick={changeSetMenu}
+              className="flex flex-col items-end bg-white w-1/2 h-full md:w-1/3 px-10 py-4 z-100 select-none"
+              id="menu"
             >
-              <div
-                className="flex flex-col items-end bg-white w-1/2 h-full md:w-1/3 px-10 py-4 z-100 select-none"
-                id="menu"
-              >
-                <CloseIcon
-                  className="cursor-pointer mb-3"
-                  onClick={changeSetMenu}
-                />
-                <ul className="flex flex-col justify-end gap-8">
-                  {[
-                    ["Początek", "#header"],
-                    ["O projekcie", "#project"],
-                    ["Poznaj nas", "#about"],
-                    ["Dołącz teraz", "#sign-up"],
-                  ].map(([title, url]) => {
-                    return (
-                      <a
-                        href={url}
-                        className="drop-shadow-md text-end"
-                        key={title}
-                        onClick={changeSetMenu}
-                      >
-                        {title}
-                      </a>
-                    );
-                  })}
-                </ul>
-              </div>
+              <CloseIcon
+                className="cursor-pointer mb-3"
+                onClick={changeSetMenu}
+              />
+              <ul className="flex flex-col justify-end gap-8">
+                {[
+                  ["Początek", "#header"],
+                  ["O projekcie", "#project"],
+                  ["Poznaj nas", "#about"],
+                  ["Dołącz teraz", "#sign-up"],
+                ].map(([title, url]) => {
+                  return (
+                    <a
+                      href={url}
+                      className="drop-shadow-md text-end"
+                      key={title}
+                      onClick={changeSetMenu}
+                    >
+                      {title}
+                    </a>
+                  );
+                })}
+              </ul>
             </div>
-          ) : (
-            ""
-          )}
+          </div>
         </nav>
       )}
     </>

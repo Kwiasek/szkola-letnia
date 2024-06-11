@@ -28,3 +28,14 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #6f625d;
 }
+
+
+.menu-visible {
+  transform: translate(0px);
+  transition: all .5s;
+}
+
+.menu-hidden {
+  transform: translate(500px);
+  transition: all .5s;
+}
