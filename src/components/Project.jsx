@@ -43,7 +43,7 @@ const Project = () => {
             bgColor="coffee-400"
           />
           <Flashcard
-            text="Po 6 latach ciężkiej pracy, udało nam się stworzyć sieć łączącą placówki w całej polsce. Dzięki szczerości i działaniu na zasadzie obustronnej pomocy, udało nam się rozwinąć na niespodziewaną skalę. W tym momencie, mamy kontrakty z wytwórcami produktów żywieniowych, rolnikami, cukiernikami, barmanami, szefami kuchni, i wiele, wiele więcej. Nie było łatwo, dwa razy prawie zakończyliśmy działalność, lecz nie poddaliśmy się, i parliśmy dalej. Dzięki temu, teraz możemy przekazywać nabytą wiedzę kolejnym pokoleniom."
+            text="Po 6 latach ciężkiej pracy, udało nam się stworzyć sieć łączącą placówki w całej Polsce. Dzięki szczerości i działaniu na zasadzie obustronnych korzyści, udało nam się rozwinąć na niespodziewaną skalę. W tym momencie, mamy kontrakty z wytwórcami lokalnych produktów, rolnikami, cukiernikami, barmanami, szefami kuchni, i wiele, wiele więcej. Nie było łatwo, dwa razy prawie zakończyliśmy działalność, lecz nie poddaliśmy się, i parliśmy dalej. Dzięki temu, teraz możemy przekazywać nabytą wiedzę kolejnym pokoleniom."
             bgColor="coffee-500"
           />
         </div>
