@@ -4,7 +4,6 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useState, useEffect } from "react";
 
 const Nav = () => {
-  const [menu, setMenu] = useState(true);
   const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
     const updateWindowDimensions = () => {
@@ -17,24 +16,31 @@ const Nav = () => {
     return () => window.removeEventListener("resize", updateWindowDimensions);
   }, []);
 
-  const changeSetMenu = (event) => {
-    console.log("click");
-    if (event.target.getAttribute("id") !== "menu") {
-      menu ? setMenu(false) : setMenu(true);
+  let visible = false;
 
-      if (menu) {
-        document.querySelector("#sliding").classList.add("menu-visible");
-        document.querySelector("#sliding").classList.remove("menu-hidden");
-        document
-          .querySelector("#sliding")
-          .classList.add("bg-slate-900/30", "backdrop-blur-sm");
-      } else {
-        document.querySelector("#sliding").classList.add("menu-hidden");
-        document.querySelector("#sliding").classList.remove("menu-visible");
-        document
-          .querySelector("#sliding")
-          .classList.remove("bg-slate-900/30", "backdrop-blur-sm");
-      }
+  const changeSetMenu = (event) => {
+    const id = event.target.getAttribute("id");
+    const validIds = ["sliding", "close-icon", "#header", "#project", "#about", "#sign-up"];
+
+    if ((!visible && id === "open-icon") || (visible && validIds.includes(id))) {
+      visible = visible ? false : true;
+    }
+
+    if (visible) {
+      document.querySelector("#menu").classList.add("menu-visible");
+      document.querySelector("#menu").classList.remove("menu-hidden");
+      document.querySelector("#sliding").classList.remove("-z-10");
+      document
+        .querySelector("#sliding")
+        .classList.add("bg-slate-900/30", "backdrop-blur-sm", "z-10");
+    }
+    else {
+      document.querySelector("#menu").classList.add("menu-hidden");
+      document.querySelector("#menu").classList.remove("menu-visible");
+      document.querySelector("#sliding").classList.add("-z-10");
+      document
+        .querySelector("#sliding")
+        .classList.remove("bg-slate-900/30", "backdrop-blur-sm", "z-10");
     }
   };
   return (
@@ -73,17 +79,18 @@ const Nav = () => {
             <LocalDiningIcon />
             Letnie smaki
           </a>
-          <MenuIcon className="cursor-pointer" onClick={changeSetMenu} />
+          <MenuIcon id="open-icon" className="cursor-pointer" onClick={changeSetMenu} />
           <div
             id="sliding"
-            className="menu-hidden fixed top-0 left-0 h-screen w-screen flex justify-end z-10"
+            className=" fixed top-0 left-0 h-screen w-screen flex justify-end -z-10 transition-all"
             onClick={changeSetMenu}
           >
             <div
-              className="flex flex-col items-end bg-white w-1/2 h-full md:w-1/3 px-10 py-4 z-100 select-none"
+              className="menu-hidden flex flex-col items-end bg-white w-1/2 h-full md:w-1/3 px-10 py-4 z-100 select-none"
               id="menu"
             >
               <CloseIcon
+                id="close-icon"
                 className="cursor-pointer mb-3"
                 onClick={changeSetMenu}
               />
@@ -96,6 +103,7 @@ const Nav = () => {
                 ].map(([title, url]) => {
                   return (
                     <a
+                      id={url}
                       href={url}
                       className="drop-shadow-md text-end"
                       key={title}
