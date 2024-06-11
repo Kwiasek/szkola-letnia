@@ -9,7 +9,7 @@ const PersonCard = ({ name, position, img, text, bgColor, imgPosition }) => {
       <p className="text-xl text-coffee-300 mb-2">{position}</p>
       <img
         src={img}
-        className="mb-2 rounded-md max-w-full h-auto aspect-2/3 object-cover"
+        className="mb-2 rounded-md max-h-fit max-w-64 h-auto aspect-2/3 object-cover"
         alt={name}
         style={{ objectPosition: imgPosition }}
       />
