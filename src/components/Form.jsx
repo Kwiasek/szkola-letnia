@@ -232,7 +232,7 @@ const Form = () => {
               <button
                 id="submit-btn"
                 type="button"
-                className="bg-coffee-700 text-coffee-100 text-4xl max-w-1/3 mx-auto rounded-3xl border-2 border-coffee-800 px-5 py-2 hover:bg-coffee-900 transition"
+                className="font-varela bg-coffee-700 text-coffee-100 text-2xl max-w-1/3 mx-auto rounded-3xl border-2 border-coffee-800 px-5 py-2 hover:bg-coffee-900 transition"
                 onClick={formValidation}
               >
                 Zapisz się
