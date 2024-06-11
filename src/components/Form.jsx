@@ -219,7 +219,6 @@ const Form = () => {
                 <option value="june">czerwiec</option>
                 <option value="july">lipec</option>
                 <option value="august">sierpień</option>
-                <option value="september">wrzesień</option>
               </select>
               <p
                 id="error-term"
