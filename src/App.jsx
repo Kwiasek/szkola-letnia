@@ -9,7 +9,7 @@ import Offer from "./components/Offer";
 
 function App() {
   return (
-    <div className="w-screen text-coffee-900 antialiased">
+    <div className="w-screen text-coffee-900 font-varela antialiased">
       <div id="alert" className="hidden">
         <Alert />
       </div>

@@ -6,6 +6,7 @@ export default {
             sans: ["Open Sans", "sans-serif"],
             serif: ["Merriweather", "serif"],
             kalam: ["Kalam", "serif"],
+            varela: ["Varela", "sans-serif"],
         },
         extend: {
             backgroundImage: {
