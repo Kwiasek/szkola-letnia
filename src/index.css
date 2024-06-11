@@ -29,11 +29,9 @@
   background: #6f625d;
 }
 
-
-
 .menu-visible {
   transform: translate(0px);
-  transition: all .4s ease-in-out;
+  
 }
 
 .menu-hidden {

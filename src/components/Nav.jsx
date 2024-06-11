@@ -1,22 +1,23 @@
 import LocalDiningIcon from "@mui/icons-material/LocalDining";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const Nav = () => {
   const [width, setWidth] = useState(window.innerWidth);
+  const [visible, setVisible] = useState(false);
+  const menuRef = useRef(null);
+  const slidingRef = useRef(null);
+
   useEffect(() => {
     const updateWindowDimensions = () => {
-      const newWidth = window.innerWidth;
-      setWidth(newWidth);
+      setWidth(window.innerWidth);
     };
 
     window.addEventListener("resize", updateWindowDimensions);
 
     return () => window.removeEventListener("resize", updateWindowDimensions);
   }, []);
-
-  let visible = false;
 
   const changeSetMenu = (event) => {
     const id = event.target.getAttribute("id");
@@ -33,16 +34,35 @@ const Nav = () => {
       (!visible && id === "open-icon") ||
       (visible && validIds.includes(id))
     ) {
-      visible = visible ? false : true;
+      setVisible(!visible);
     }
+  };
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        menuRef.current && !menuRef.current.contains(event.target) &&
+        slidingRef.current && !slidingRef.current.contains(event.target)
+      ) {
+        setVisible(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuRef, slidingRef]);
+
+  useEffect(() => {
     if (visible) {
       document.querySelector("#menu").classList.add("menu-visible");
       document.querySelector("#menu").classList.remove("menu-hidden");
       document.querySelector("#sliding").classList.remove("-z-10");
       document
         .querySelector("#sliding")
-        .classList.add("bg-slate-900/30", "backdrop-blur-sm", "z-10");
+        .classList.add("bg-slate-900/30", "backdrop-blur-sm", "z-10", "visible");
     } else {
       document.querySelector("#menu").classList.add("menu-hidden");
       document.querySelector("#menu").classList.remove("menu-visible");
@@ -50,8 +70,12 @@ const Nav = () => {
       document
         .querySelector("#sliding")
         .classList.remove("bg-slate-900/30", "backdrop-blur-sm", "z-10");
+      setTimeout(() => {
+        document.querySelector("#sliding").classList.remove("visible");
+      }, 300);
     }
-  };
+  }, [visible]);
+
   return (
     <>
       {width > 1024 ? (
@@ -104,27 +128,18 @@ const Nav = () => {
               d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"
             ></path>
           </svg>
-          {/* <MenuIcon
-            className="cursor-pointer"
-            id="open-icon"
-            onClick={changeSetMenu}
-          /> */}
 
           <div
             id="sliding"
-            className=" fixed top-0 left-0 h-screen w-screen flex justify-end -z-10 transition-all"
+            ref={slidingRef}
+            className="fixed top-0 left-0 h-screen w-screen flex justify-end -z-10 transition-all duration-300 pointer-events-none"
             onClick={changeSetMenu}
           >
             <div
-              className="menu-hidden flex flex-col items-end bg-white w-1/2 h-full md:w-1/3 px-10 py-4 z-100 select-none"
+              className="menu-hidden flex flex-col items-end bg-white w-1/2 h-full md:w-1/3 px-10 py-4 z-100 select-none pointer-events-auto transition-all duration-300"
               id="menu"
+              ref={menuRef}
             >
-              {/* <CloseIcon
-                className="cursor-pointer mb-3"
-                id="close-icon"
-                onClick={changeSetMenu}
-              /> */}
-
               <svg
                 className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium cursor-pointer mb-3 css-i4bv87-MuiSvgIcon-root"
                 focusable="false"
