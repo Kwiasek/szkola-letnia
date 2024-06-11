@@ -30,7 +30,7 @@ const About = () => {
     <div id="about" className="my-10 w-full mx-auto">
       <SectionHeader text={"O nas"} />
 
-      <div className="flex flex-col xl:flex-row my-5 md:p-10 p-5 justify-between gap-8 h-max shrink bg-coffee-800 text-white rounded-xl border-black border-2">
+      <div className="flex flex-col xl:flex-row my-5 md:p-10 p-5 justify-between gap-8 h-max shrink bg-coffee-800 text-white rounded-xl border-coffee-900 border-2">
         <img
           src="close-up-woman-hand-put-topping-homemade-pizza.jpg"
           className="rounded-xl max-w-max xl:max-w-md aspect-auto shrink"
