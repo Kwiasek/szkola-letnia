@@ -4,7 +4,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useState, useEffect } from "react";
 
 const Nav = () => {
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState(true);
   const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
     const updateWindowDimensions = () => {
@@ -21,13 +21,20 @@ const Nav = () => {
     console.log("click");
     if (event.target.getAttribute("id") !== "menu") {
       menu ? setMenu(false) : setMenu(true);
-    }
-    if (menu) {
-      document.querySelector("#sliding").classList.add("menu-visible");
-      document.querySelector("#sliding").classList.remove("menu-hidden");
-    } else {
-      document.querySelector("#sliding").classList.add("menu-hidden");
-      document.querySelector("#sliding").classList.remove("menu-visible");
+
+      if (menu) {
+        document.querySelector("#sliding").classList.add("menu-visible");
+        document.querySelector("#sliding").classList.remove("menu-hidden");
+        document
+          .querySelector("#sliding")
+          .classList.add("bg-slate-900/30", "backdrop-blur-sm");
+      } else {
+        document.querySelector("#sliding").classList.add("menu-hidden");
+        document.querySelector("#sliding").classList.remove("menu-visible");
+        document
+          .querySelector("#sliding")
+          .classList.remove("bg-slate-900/30", "backdrop-blur-sm");
+      }
     }
   };
   return (
@@ -69,7 +76,7 @@ const Nav = () => {
           <MenuIcon className="cursor-pointer" onClick={changeSetMenu} />
           <div
             id="sliding"
-            className="menu-hidden fixed top-0 left-0 h-screen w-screen transition flex justify-end z-10 bg-slate-900/30 backdrop-blur-sm"
+            className="menu-hidden fixed top-0 left-0 h-screen w-screen flex justify-end z-10"
             onClick={changeSetMenu}
           >
             <div
