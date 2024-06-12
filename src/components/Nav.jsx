@@ -41,8 +41,10 @@ const Nav = () => {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
-        menuRef.current && !menuRef.current.contains(event.target) &&
-        slidingRef.current && !slidingRef.current.contains(event.target)
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        slidingRef.current &&
+        !slidingRef.current.contains(event.target)
       ) {
         setVisible(false);
       }
@@ -56,23 +58,29 @@ const Nav = () => {
   }, [menuRef, slidingRef]);
 
   useEffect(() => {
+    const menu = document.querySelector("#menu");
+    const sliding = document.querySelector("#sliding");
+
     if (visible) {
-      document.querySelector("#menu").classList.add("menu-visible");
-      document.querySelector("#menu").classList.remove("menu-hidden");
-      document.querySelector("#sliding").classList.remove("-z-10");
-      document
-        .querySelector("#sliding")
-        .classList.add("bg-slate-900/30", "backdrop-blur-sm", "z-10", "visible");
+      menu.classList.add("menu-visible");
+      menu.classList.remove("menu-hidden");
+      sliding.classList.remove("-z-10");
+      sliding.classList.add(
+        "bg-slate-900/30",
+        "backdrop-blur-sm",
+        "z-10",
+        "visible"
+      );
     } else {
-      document.querySelector("#menu").classList.add("menu-hidden");
-      document.querySelector("#menu").classList.remove("menu-visible");
-      document.querySelector("#sliding").classList.add("-z-10");
-      document
-        .querySelector("#sliding")
-        .classList.remove("bg-slate-900/30", "backdrop-blur-sm", "z-10");
-      setTimeout(() => {
-        document.querySelector("#sliding").classList.remove("visible");
-      }, 300);
+      if (menu != null && sliding != null) {
+        menu.classList.add("menu-hidden");
+        menu.classList.remove("menu-visible");
+        sliding.classList.add("-z-10");
+        sliding.classList.remove("bg-slate-900/30", "backdrop-blur-sm", "z-10");
+        setTimeout(() => {
+          document.querySelector("#sliding").classList.remove("visible");
+        }, 300);
+      }
     }
   }, [visible]);
 
