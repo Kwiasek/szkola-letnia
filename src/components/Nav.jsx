@@ -149,7 +149,7 @@ const Nav = () => {
               ref={menuRef}
             >
               <svg
-                className="h-full max-w-full MuiSvgIcon-root MuiSvgIcon-fontSizeMedium cursor-pointer mb-3 css-i4bv87-MuiSvgIcon-root"
+                className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium cursor-pointer mb-3 css-i4bv87-MuiSvgIcon-root"
                 focusable="false"
                 aria-hidden="true"
                 viewBox="0 0 24 24"
