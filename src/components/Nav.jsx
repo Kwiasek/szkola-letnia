@@ -123,7 +123,7 @@ const Nav = () => {
 
           <svg
             onClick={changeSetMenu}
-            className="h-16 w-16 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium cursor-pointer css-i4bv87-MuiSvgIcon-root"
+            className="h-full max-w-full MuiSvgIcon-root MuiSvgIcon-fontSizeMedium cursor-pointer css-i4bv87-MuiSvgIcon-root"
             focusable="false"
             aria-hidden="true"
             viewBox="0 0 24 24"
