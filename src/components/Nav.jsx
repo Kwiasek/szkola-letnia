@@ -155,6 +155,7 @@ const Nav = () => {
                 viewBox="0 0 24 24"
                 data-testid="CloseIcon"
                 id="close-icon"
+                width="32"
                 onClick={changeSetMenu}
               >
                 <path
